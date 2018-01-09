@@ -7,9 +7,12 @@ env:
 if: tag IS blank
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 before_script:
 - chmod +x gradlew
 
+=======
+>>>>>>> eece7f3... Add task for migrating databases
 =======
 >>>>>>> eece7f3... Add task for migrating databases
 jobs:
