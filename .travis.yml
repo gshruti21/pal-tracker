@@ -4,17 +4,6 @@ notifications:
   email: false
 env:
   - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
-if: tag IS blank
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-before_script:
-- chmod +x gradlew
-
-=======
->>>>>>> eece7f3... Add task for migrating databases
-=======
->>>>>>> eece7f3... Add task for migrating databases
 jobs:
   include:
     - stage: build and publish
