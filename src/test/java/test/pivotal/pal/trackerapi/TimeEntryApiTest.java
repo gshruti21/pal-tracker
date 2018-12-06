@@ -4,6 +4,7 @@ import com.jayway.jsonpath.DocumentContext;
 import io.pivotal.pal.tracker.PalTrackerApplication;
 import io.pivotal.pal.tracker.TimeEntry;
 import org.junit.Test;
+import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,6 +14,9 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.jdbc.core.JdbcTemplate;
+import java.util.TimeZone;
+import com.mysql.cj.jdbc.MysqlDataSource;
 
 import java.time.LocalDate;
 import java.util.Collection;
